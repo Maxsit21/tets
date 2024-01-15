@@ -1,0 +1,281 @@
+<html>
+<head>
+	<title> Отдел грузоперевозок </title>
+	
+	<link href="css/style.css"rel="stylesheet" type="text/css"/>
+	<meta http-equiv="Content-Type"content="text/html;charset=windows-1251"/>
+	
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script language = "javascript">
+function montharr(m0, m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11) {
+	this[0] = m0;
+	this[1] = m1;
+	this[2] = m2;
+	this[3] = m3;
+	this[4] = m4;
+	this[5] = m5;
+	this[6] = m6;
+	this[7] = m7;
+	this[8] = m8;
+	this[9] = m9;
+	this[10] = m10;
+	this[11] = m11;
+}
+function calendar() {
+	var monthNames = "ЯнвФевМарАпрМайИюнИюлАвгСенОктНояДек";
+	var today = new Date();
+	var thisDay;
+	var monthDays = new montharr(31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31);
+	year = today.getYear();
+	if (year<2000)
+	   year = year + 1900;
+	thisDay = today.getDate();
+	if (((year %4 == 0) && (year % 100 != 0)) || (year % 400 == 0))
+	   monthDays[1] = 29;
+	nDays = monthDays[today.getMonth()];
+	firstDay = today;
+	firstDay.setDate(1); 
+	testMe = firstDay.getDate();
+	if (testMe == 2)
+	   firstDay.setDate(0);
+	startDay = firstDay.getDay();
+	document.writeln("<div align = 'center'>");
+  	document.write("<table border = '2' width='30%'>");
+  	document.write("<tr><th colspan='7'>");
+  	document.write(monthNames.substring(today.getMonth() * 3 + 0, (today.getMonth() + 1) * 3 + 0));
+  	document.write(". ");
+  	document.write(year);
+  	document.write("<tr> <th>Пон <th>Вт <th>Ср <th>Чт <th>Пт <th>Сб <th>Вск " );
+  	document.write("<tr>");
+  	column = 0;
+  	for (i = 0; i < startDay; i++) {
+    	document.write("<td width='30'>");
+    	column++;
+  	}
+  	for (i = 1; i <= nDays; i++) {
+    	document.write("<td width=30>");
+    	if (i == thisDay)
+      	document.write("<span style = 'color: red;'>")
+    	document.write(i);
+    	if (i == thisDay)
+      	document.write("</span>")
+    	column++;
+    	if (column == 7) {
+      	document.write("<tr>"); 
+      	column = 0;
+    	}
+  	}
+  	document.write("</table>");
+  	document.writeln("</div>");
+	}
+	</script>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compotible" content="IE=edge"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src=" js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src=" js/jquery-ui-1.9.2.custom.js"></script>
+    <script type="text/javascript" src=" js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript" src=" js/scripts.js"></script>
+	
+	
+	<meta charset= "1251"/>
+	<meta http-equiv="Content-Type" content="text/html; charset="1251"/>
+	<meta http-equiv="imagetoolbar" content="no"/>
+	<meta charset= "1251"/>
+	<link href="style.css"rel="stylesheet" type="text/css"/>
+	<link href="example/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet" type="text/css"/>
+	<script type="text/javascript" src="example/jquery-1.4.3.min.js"></script>
+	<script type="text/javascript" src="example/fancybox/jquery.mousewheel-
+	3.0.4.pack.js"></script>
+	<script type="text/javascript" src="example/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="example/fancybox/jquery.mousewheel-
+	3.0.4.pack.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function ()
+	{
+	$("a.example").fancybox({ 'opacity': true, 'overlayShow': false, 'transition': 'elastic', 'transitionOut': 'elastic'});
+	});
+	</script>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="X-UA-Compotible" content="IE=edge"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src=" js/jquery-1.8.3.js"></script>
+    <script type="text/javascript" src=" js/jquery-ui-1.9.2.custom.js"></script>
+    <script type="text/javascript" src=" js/jquery-ui-1.9.2.custom.min.js"></script>
+    <script type="text/javascript" src=" js/scripts.js"></script>
+	
+	
+	
+</head>
+<body bgcolor= "#663333">
+	<div id="wrapper1">
+		<div id="header">
+			<table width="100%" border="0" background="img/шапка6.jpg">
+				<tr>
+					<td width="10%"><img src="img/logo_rik.png" width="150" hight="130"></td>
+					<td align="center"><font size ="7" color= "#663333"><b>ОТДЕЛ ГРУЗОПЕРЕВОЗОК</b></font>
+	<script language="JavaScript">
+	var line="Только лучший сервис!!!";
+	var speed=150;
+	var i=0;
+	function m_line() {
+		if(i++<line.length) {
+			document.cit.forum.value=line.substring(0,i);
+			             }
+			else {
+			document.cit.forum.value=" ";
+			i=0;
+			         }
+			setTimeout(`m_line()`,speed);
+			         }
+	</script>
+
+<form name="cit">
+<input type = text size = 40 name = forum>
+</form>
+<script language = "javascript">
+m_line();
+				</script>
+					</td>
+					<td width="10%">
+						<script language="javascript">
+	calendar();
+	</script><div align="center"></div>
+
+					</td>	
+				</tr>
+			</table>
+		
+<ul id="nav">
+		<li>
+			<a href="index.html"title="Вернуться на главную страницу">Главная</a>
+		</li>
+		<li>
+			<a href="#"title="Информация о компании">О нас</a>
+			<ul>
+				<li><a href="Сведения.html">Сведения</a>
+				<li><a href="Документы.html">Документы</a>
+			</ul>
+		</li>
+		<li>
+			<a href="#"title="Что мы можем для вас сделать">Услуги</a>
+			<ul>
+				<li><a href="Услуги.html">Наши услуги</a>
+				<li><a href="СКЛАД.html">Наш склад</a>
+				<li><a href="Форма.html">Форма</a>
+			</ul>
+		</li>
+		<li>
+			<a href="#"title="Сотрудники">Сотрудники</a>
+			<ul>
+				<li><a href="Сотрудники.html">Сотрудники</a>
+				<li><a href="Вакансии.html">Вакансии</a>
+			</ul>
+		</li>
+		<li>
+			<a href="#"title="Как с нами связаться">Контакт</a>
+			<ul>
+				<li><a href="География.html">Наша география</a>
+				<li><a href="Структура.html">Структура сайта</a>
+			</ul>
+		</li>
+		<li>
+			<a href="#"title="База данных">База данных</a>
+			<ul>
+				<li><a href="Вход.html">Вход</a>
+			</ul>
+		</li>
+	</ul>	
+		</div>
+		
+                <div id="banner">
+                    <div class="logo_b">
+                        <center><a href="Форма.html"><img src="img/logo.png" width="100" height="70" /></a>
+                        </center>
+                    </div>
+                    <!--сцена 1-->
+                    <div id="text1"></div>
+                    <div id="text2"></div>
+                    <div id="text3"></div>
+                    <div id="text4"></div>
+                    <div id="scene_two"></div>
+                    <!--сцена 2-->
+                    <div id="text5"></div>
+                    <div id="skidka10"></div>
+                    <div id="skidka7"></div>
+                    <div id="skidka5"></div>
+                    <div id="text6"></div>
+                    <div id="text7"></div>
+                    <div id="skidka">
+                        <p>0%</p>
+                    </div>
+                    <!--сцена 3-->
+                    <div id="arrow"></div>
+                    <div id="text8"></div>
+                </div>
+            
+		<div id="content">
+            
+			<div id="mainContent"><br>
+				<center><font size="7" color="#663333"><b>Перевозка грузов</font></center></b><br>			
+						<section id="slider_bl">
+							<div class="wrapper">
+								<input checked type=radio name="slider" id="slide1" />
+								<input type=radio name="slider" id="slide2" />
+								<input type=radio name="slider" id="slide3" />
+								<input type=radio name="slider" id="slide4" />
+								<div class="slider-wrapper">
+									<div class=inner>
+									<article>
+										<div class="info top-left"></div>
+										<img src="img/1.jpg" />
+									</article>
+									<article>
+										<div class="info bottom-right"></div>
+										<img src="img/2.jpg" />
+									</article>
+									<article>
+										<div class="info bottom-left"></div>
+										<img src="img/3.jpg" />
+									</article>
+									<article>
+										<div class="info top-right"></div>
+										<img src="img/4.jpg" />
+									</article>
+									</div>
+								</div>
+								<div class="slider-prev-next-control">
+									<label for=slide1></label>
+									<label for=slide2></label>
+									<label for=slide3></label>
+									<label for=slide4></label>
+								</div>
+								<div class="slider-dot-control">
+									<label for=slide1></label>
+									<label for=slide2></label>
+									<label for=slide3></label>
+									<label for=slide4></label>
+								</div>
+							</div>
+						</section>						
+			</div>
+			<div id="secondaryContent">
+				<center ><font  size="4" color= "#663333"><h1>Реклама</h1></font>
+				
+				<a rel="img" class="photo example" href="img/M2.jpg">
+							<img src="img/M2.jpg"  />
+						</a>
+				
+				<br><br></center >
+			</div>
+		</div>
+		
+		<div id="footer">
+			<center><br><font size ="4" color= "#663333">Город Миасс<br>Телефон 89576477493<br>Факс 862-63-51<br>
+			<script language="JavaScript">document.write ("Дата последнего изменения : "+document.lastModified);</script></font></center>
+		</div>
+	</div>
+</body>
+</html>
